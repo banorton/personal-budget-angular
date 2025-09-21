@@ -1,0 +1,41 @@
+.breadcrumbs {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '>';
+    margin: 0 8px;
+    color: #6c757d;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #6c757d;
+}
